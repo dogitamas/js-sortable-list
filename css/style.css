@@ -1,0 +1,125 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: aliceblue;
+    height: auto;
+    line-height: 36px;
+    padding: 30px 0;
+}
+
+header h1{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    min-height: 600px;
+    clear: both;
+    float: none;
+}
+
+footer{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+#serverResponse{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+#tData{
+    max-width:100%;
+}
+
+#table{
+    max-width: 100%;
+    position: relative;
+    font-size: 12px;
+}
+
+#table .th{
+    float: left;
+    width: 25%;
+    margin: 0px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: brown;
+    color: #dddddd;
+}
+
+#table .rowItems{
+    max-width: 100%;
+    float: none;
+    clear: both;
+}
+
+#table .td{
+    border: 1px solid #ddd;
+    float: left;
+    height: 12px;
+    line-height: 12px;
+    overflow: auto;
+    padding: 10px;
+    width: 25%;
+}
+
+#table .td:nth-child(2), #table .th:nth-child(2) {
+    width: 5%;
+}
+
+#table .td:first-child, #table .th:first-child {
+    width: 5%;
+}
+
+#table .td:nth-child(5), #table .th:nth-child(5) {
+    width: 10%;
+}
+
+#table .td:nth-child(3), #table .th:nth-child(3) {
+    width: 15%;
+}
+
+#table .td:nth-child(2), #table .th:nth-child(2) {
+    width: 10%;
+}
+
+#table .td:last-child, #table .th:last-child {
+    width: 15%;
+}
+
+.clickable{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+/**Some mobile optimized code snippet***/
+@media screen and (max-width: 1000px) {
+    #table .row {width: 50%; }
+    #table #tData{ float: left; width: 100%; }
+    #tData .rowItems .td { width: 100% !important;  float: none; clear: both; }
+    #table .td{ height: auto;}
+    .rowItems .td{ width: 100% !important; }
+    #getHeader{ display: none; }
+    #tData .rowItems:nth-child(even)  { background-color: #dddddd; }
+    .rowItems div:nth-child(1)::before { content: "ID: "; }
+    .rowItems div:nth-child(3)::before { content: "Author: "; }
+    .rowItems div:nth-child(4)::before { content: "Title: "; }
+    .rowItems div:nth-child(5)::before { content: "Reading time: "; }
+    .rowItems div:nth-child(6)::before { content: "Publication date: ";}
+}
+
+
+Jason.Estes@celanese.com
+Zoltan.Virag@celanese.com
+Zsanett.Nagy@celanese.com
